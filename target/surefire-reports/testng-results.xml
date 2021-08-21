@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" retried="1" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2242" started-at="2021-08-18T22:55:58 IST" finished-at="2021-08-18T22:56:00 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2242" started-at="2021-08-18T22:55:58 IST" finished-at="2021-08-18T22:56:00 IST">
+      <class name="basePackage.HomePageTest">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:basePackage.HomePageTest@1f021e6c]" name="beforeSuite" is-config="true" duration-ms="4730" started-at="2021-08-18T22:55:53 IST" finished-at="2021-08-18T22:55:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:basePackage.HomePageTest@1f021e6c]" name="beforeTest" is-config="true" duration-ms="141" started-at="2021-08-18T22:55:58 IST" finished-at="2021-08-18T22:55:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="pageRelatedFunction()[pri:0, instance:basePackage.HomePageTest@1f021e6c]" name="pageRelatedFunction" duration-ms="733" retried="true" started-at="2021-08-18T22:55:58 IST" finished-at="2021-08-18T22:55:59 IST">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/commons/beanutils/DynaBean]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/beanutils/DynaBean
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at com.sun.proxy.$Proxy6.<clinit>(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at java.lang.reflect.Proxy.newProxyInstance(Proxy.java:739)
+at org.apache.commons.configuration2.builder.fluent.Parameters.createParametersProxy(Parameters.java:306)
+at org.apache.commons.configuration2.builder.fluent.Parameters.fileBased(Parameters.java:185)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileParams(Configurations.java:640)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileParams(Configurations.java:676)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileBasedBuilder(Configurations.java:163)
+at org.apache.commons.configuration2.builder.fluent.Configurations.propertiesBuilder(Configurations.java:288)
+at org.apache.commons.configuration2.builder.fluent.Configurations.properties(Configurations.java:342)
+at basePackage.HomePageTest.pageRelatedFunction(HomePageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.beanutils.DynaBean
+at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageRelatedFunction -->
+        <test-method status="FAIL" signature="pageRelatedFunction()[pri:0, instance:basePackage.HomePageTest@1f021e6c]" name="pageRelatedFunction" duration-ms="488" started-at="2021-08-18T22:55:59 IST" finished-at="2021-08-18T22:55:59 IST">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class com.sun.proxy.$Proxy6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class com.sun.proxy.$Proxy6
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at java.lang.reflect.Proxy.newProxyInstance(Proxy.java:739)
+at org.apache.commons.configuration2.builder.fluent.Parameters.createParametersProxy(Parameters.java:306)
+at org.apache.commons.configuration2.builder.fluent.Parameters.fileBased(Parameters.java:185)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileParams(Configurations.java:640)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileParams(Configurations.java:676)
+at org.apache.commons.configuration2.builder.fluent.Configurations.fileBasedBuilder(Configurations.java:163)
+at org.apache.commons.configuration2.builder.fluent.Configurations.propertiesBuilder(Configurations.java:288)
+at org.apache.commons.configuration2.builder.fluent.Configurations.properties(Configurations.java:342)
+at basePackage.HomePageTest.pageRelatedFunction(HomePageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageRelatedFunction -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:basePackage.HomePageTest@1f021e6c]" name="afterTest" is-config="true" duration-ms="625" started-at="2021-08-18T22:56:00 IST" finished-at="2021-08-18T22:56:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- basePackage.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

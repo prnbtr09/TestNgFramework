@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2305" started-at="2021-08-17T00:12:25 IST" finished-at="2021-08-17T00:12:28 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2305" started-at="2021-08-17T00:12:25 IST" finished-at="2021-08-17T00:12:28 IST">
+      <class name="basePackage.HomePageTest">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:basePackage.HomePageTest@61d47554]" name="beforeSuite" is-config="true" duration-ms="7761" started-at="2021-08-17T00:12:18 IST" finished-at="2021-08-17T00:12:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:basePackage.HomePageTest@61d47554]" name="beforeTest" is-config="true" duration-ms="271" started-at="2021-08-17T00:12:25 IST" finished-at="2021-08-17T00:12:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="pageRelatedFunction()[pri:0, instance:basePackage.HomePageTest@61d47554]" name="pageRelatedFunction" duration-ms="1215" started-at="2021-08-17T00:12:26 IST" finished-at="2021-08-17T00:12:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageRelatedFunction -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:basePackage.HomePageTest@61d47554]" name="afterTest" is-config="true" duration-ms="764" started-at="2021-08-17T00:12:27 IST" finished-at="2021-08-17T00:12:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- basePackage.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
